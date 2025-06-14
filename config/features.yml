@@ -26,8 +26,8 @@
   enabled: false
 - name: disable_branding
   display_name: Disable Branding
-  enabled: false
-  premium: true
+  enabled: true
+  premium: false
 - name: email_continuity_on_api_channel
   display_name: Email Continuity on API Channel
   enabled: false
@@ -157,7 +157,7 @@
   chatwoot_internal: true
 - name: shopify_integration
   display_name: Shopify Integration
-  enabled: false
+  enabled: true
   chatwoot_internal: true
 - name: search_with_gin
   display_name: Search messages with GIN
@@ -168,4 +168,4 @@
   enabled: true
 - name: crm_integration
   display_name: CRM Integration
-  enabled: false
+  enabled: true
