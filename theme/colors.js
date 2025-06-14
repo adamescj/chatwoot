@@ -14,6 +14,70 @@ const {
 } = require('@radix-ui/colors');
 
 export const colors = {
+  // Brand Colors - Purple Theme
+  brand: {
+    // Main brand purple
+    primary: '#9747FF',
+    secondary: '#7928ca',
+
+    // Purple scale
+    purple: {
+      50: '#faf7ff',
+      100: '#f3ecff',
+      200: '#e8d8ff',
+      300: '#d4b4ff',
+      400: '#9747FF', // Main brand color
+      500: '#8b3dff',
+      600: '#7928ca',
+      700: '#6a1fa6',
+      800: '#5a1a86',
+      900: '#4c156b',
+      950: '#300a4a',
+    },
+  },
+
+  // Neutral System for Dark Theme
+  neutral: {
+    50: '#fafafa',
+    100: '#f5f5f5',
+    200: '#e5e5e5',
+    300: '#d4d4d4',
+    400: '#a3a3a3',
+    500: '#737373',
+    600: '#525252',
+    700: '#404040',
+    800: '#262626',
+    850: '#1a1a1a',
+    900: '#171717',
+    950: '#0a0a0a',
+  },
+
+  // Dark Theme Background System
+  bg: {
+    primary: '#000000',      // Main black background
+    secondary: '#050505',    // Slightly lighter black
+    card: '#0f0f0f',        // Card backgrounds
+    'card-hover': '#1a1a1a', // Card hover states
+    muted: '#171717',       // Muted backgrounds
+  },
+
+  // Border System
+  border: {
+    primary: 'rgba(255, 255, 255, 0.1)',
+    secondary: 'rgba(255, 255, 255, 0.05)',
+    purple: 'rgba(151, 71, 255, 0.3)',
+    'purple-light': 'rgba(151, 71, 255, 0.1)',
+  },
+
+  // Status Colors
+  status: {
+    success: '#10b981',
+    warning: '#f59e0b',
+    error: '#ef4444',
+    info: '#3b82f6',
+  },
+
+  // Existing woot colors (keeping for backward compatibility)
   woot: {
     25: blue.blue2,
     50: blue.blue3,
@@ -102,20 +166,23 @@ export const colors = {
     800: violetDark.violet6,
     900: violet.violet12,
   },
+
+  // Updated primary to use brand purple
   primary: {
-    25: 'rgb(var(--color-primary-25) / <alpha-value>)',
-    50: 'rgb(var(--color-primary-50) / <alpha-value>)',
-    75: 'rgb(var(--color-primary-75) / <alpha-value>)',
-    100: 'rgb(var(--color-primary-100) / <alpha-value>)',
-    200: 'rgb(var(--color-primary-200) / <alpha-value>)',
-    300: 'rgb(var(--color-primary-300) / <alpha-value>)',
-    400: 'rgb(var(--color-primary-400) / <alpha-value>)',
-    500: 'rgb(var(--color-primary-500) / <alpha-value>)',
-    600: 'rgb(var(--color-primary-600) / <alpha-value>)',
-    700: 'rgb(var(--color-primary-700) / <alpha-value>)',
-    800: 'rgb(var(--color-primary-800) / <alpha-value>)',
-    900: 'rgb(var(--color-primary-900) / <alpha-value>)',
+    25: 'rgb(250 247 255 / <alpha-value>)', // purple-50
+    50: 'rgb(243 236 255 / <alpha-value>)', // purple-100
+    75: 'rgb(232 216 255 / <alpha-value>)', // purple-200
+    100: 'rgb(212 180 255 / <alpha-value>)', // purple-300
+    200: 'rgb(151 71 255 / <alpha-value>)', // Main brand color
+    300: 'rgb(139 61 255 / <alpha-value>)', // purple-500
+    400: 'rgb(121 40 202 / <alpha-value>)', // purple-600
+    500: 'rgb(106 31 166 / <alpha-value>)', // purple-700
+    600: 'rgb(90 26 134 / <alpha-value>)', // purple-800
+    700: 'rgb(76 21 107 / <alpha-value>)', // purple-900
+    800: 'rgb(48 10 74 / <alpha-value>)', // purple-950
+    900: 'rgb(32 7 50 / <alpha-value>)', // Even darker
   },
+
   ash: {
     25: 'rgb(var(--color-ash-25) / <alpha-value>)',
     50: 'rgb(var(--color-ash-50) / <alpha-value>)',
@@ -283,6 +350,7 @@ export const colors = {
     800: 'rgb(var(--color-orange-800) / <alpha-value>)',
     900: 'rgb(var(--color-orange-900) / <alpha-value>)',
   },
+
   // next design system color
   n: {
     slate: {
@@ -391,7 +459,7 @@ export const colors = {
     },
 
     black: '#000000',
-    brand: '#2781F6',
+    brand: '#9747FF', // Updated to use purple brand
     background: 'rgb(var(--background-color) / <alpha-value>)',
     solid: {
       1: 'rgb(var(--solid-1) / <alpha-value>)',
@@ -401,6 +469,7 @@ export const colors = {
       amber: 'rgb(var(--solid-amber) / <alpha-value>)',
       blue: 'rgb(var(--solid-blue) / <alpha-value>)',
       iris: 'rgb(var(--solid-iris) / <alpha-value>)',
+      purple: '#9747FF', // Brand purple
     },
     alpha: {
       1: 'rgba(var(--alpha-1))',
@@ -415,5 +484,7 @@ export const colors = {
     strong: 'rgb(var(--border-strong) / <alpha-value>)',
     'blue-border': 'rgba(var(--border-blue))',
     'blue-text': 'rgba(var(--text-blue))',
+    'purple-border': 'rgba(151, 71, 255, 0.3)', // Brand purple border
+    'purple-text': '#9747FF', // Brand purple text
   },
 };
