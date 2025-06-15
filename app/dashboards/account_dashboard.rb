@@ -119,8 +119,13 @@ class AccountDashboard < Administrate::BaseDashboard
   def permitted_attributes(action)
     attrs = super + [limits: {}]
 
-    # Add manually_managed_features to permitted attributes only for Chatwoot Cloud
-    attrs << { manually_managed_features: [] } if ChatwootApp.chatwoot_cloud?
+    if ChatwootApp.enterprise?
+      # Add manually_managed_features to permitted attributes only for Chatwoot Cloud
+      attrs << { manually_managed_features: [] } if ChatwootApp.chatwoot_cloud?
+
+      # Add all_features to permitted attributes for enterprise installations
+      attrs << { all_features: {} }
+    end
 
     attrs
   end
