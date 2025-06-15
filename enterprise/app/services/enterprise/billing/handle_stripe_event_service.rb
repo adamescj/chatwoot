@@ -15,13 +15,17 @@ class Enterprise::Billing::HandleStripeEventService
     channel_email
     channel_instagram
     disable_branding
+    captain_integration
+    sla
+    custom_roles
+    audit_logs
   ].freeze
 
-  # Additional features available starting with the Business plan
-  BUSINESS_PLAN_FEATURES = %w[sla custom_roles].freeze
+  # Additional features available starting with the Business plan (now included in Startup for self-hosted)
+  BUSINESS_PLAN_FEATURES = %w[].freeze
 
-  # Additional features available only in the Enterprise plan
-  ENTERPRISE_PLAN_FEATURES = %w[audit_logs].freeze
+  # Additional features available only in the Enterprise plan (now included in Startup for self-hosted)
+  ENTERPRISE_PLAN_FEATURES = %w[].freeze
 
   def perform(event:)
     @event = event

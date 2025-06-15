@@ -39,8 +39,6 @@ export const FEATURE_FLAGS = {
 };
 
 export const PREMIUM_FEATURES = [
-  FEATURE_FLAGS.SLA,
-  FEATURE_FLAGS.CUSTOM_ROLES,
-  FEATURE_FLAGS.AUDIT_LOGS,
-  FEATURE_FLAGS.HELP_CENTER,
+  // For self-hosted enterprise installations, these features are now included by default
+  // Keep this array for cloud installations that still use premium tiers
 ];

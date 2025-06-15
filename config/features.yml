@@ -27,7 +27,6 @@
 - name: disable_branding
   display_name: Disable Branding
   enabled: true
-  premium: false
 - name: email_continuity_on_api_channel
   display_name: Email Continuity on API Channel
   enabled: true
@@ -104,11 +103,9 @@
 - name: audit_logs
   display_name: Audit Logs
   enabled: true
-  premium: true
 - name: response_bot
   display_name: Response Bot
   enabled: false
-  premium: true
   deprecated: true
 - name: message_reply_to
   display_name: Message Reply To
@@ -122,28 +119,22 @@
 - name: inbox_view
   display_name: Inbox View
   enabled: false
-  chatwoot_internal: true
 - name: sla
   display_name: SLA
   enabled: true
-  premium: true
   help_url: https://chwt.app/hc/sla
 - name: help_center_embedding_search
   display_name: Help Center Embedding Search
-  enabled: false
-  premium: true
-  chatwoot_internal: true
+  enabled: true
 - name: linear_integration
   display_name: Linear Integration
   enabled: true
 - name: captain_integration
   display_name: Captain
   enabled: true
-  premium: true
 - name: custom_roles
   display_name: Custom Roles
   enabled: true
-  premium: true
 - name: chatwoot_v4
   display_name: Chatwoot V4
   enabled: true
@@ -154,15 +145,12 @@
 - name: contact_chatwoot_support_team
   display_name: Contact Chatwoot Support Team
   enabled: true
-  chatwoot_internal: true
 - name: shopify_integration
   display_name: Shopify Integration
   enabled: true
-  chatwoot_internal: true
 - name: search_with_gin
   display_name: Search messages with GIN
-  enabled: false
-  chatwoot_internal: true
+  enabled: true
 - name: channel_instagram
   display_name: Instagram Channel
   enabled: true
