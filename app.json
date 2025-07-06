@@ -1,9 +1,9 @@
 {
-  "name": "Chatwoot",
-  "description": "Chatwoot is a customer support tool for instant messaging channels",
-  "website": "https://www.chatwoot.com/",
-  "repository": "https://github.com/chatwoot/chatwoot",
-  "logo": "https://app.chatwoot.com/brand-assets/logo_thumbnail.svg",
+  "name": "EBSY Chat",
+  "description": "EBSY Chat is a customer support tool for instant messaging channels",
+  "website": "https://www.ebsy.dev/",
+  "repository": "https://github.com/ebsy/",
+  "logo": "https://3fqqcteaykr65jij.public.blob.vercel-storage.com/dark.logo-ImbBhhA7x3GLBHXsBdbQgKHKxLdQVg.svg",
   "keywords": [
     "live chat",
     "customer support",
